@@ -60,13 +60,13 @@ body {
     left: 0;
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
     transition: width 0.5s ease;
-    }
+}
 
-.menu-link:hover::after{
+.menu-link:hover::after {
     width: 100%;
-}   
+}
 
-.cabecalho{
+.cabecalho {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -83,24 +83,23 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;  
+    font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
 }
 
-.cabecalho-sub-titulo{
-    font-size: 1.5rem;    
+.cabecalho-sub-titulo {
+    font-size: 1.5rem;
     color: var(--claro)
-
 }
 
-.sobre{
+.sobre {
     padding: 6rem 2rem;
 
 }
 
-.sobre-titulo{
+.sobre-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
@@ -108,7 +107,7 @@ h1 {
 
 }
 
-.sobre-caixa{
+.sobre-caixa {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -119,10 +118,35 @@ h1 {
 
 }
 
-.sobre-paragrafo{
+.sobre-paragrafo {
 
     text-align: center;
     font-size: 1rem;
 
 
 }
+
+.projetos {
+
+    padding: 6rem 2rem;
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.projetos-card {}
+
+.projetos-titulo {}
+
+.projeto-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-projetos {}
+
+.paragrafo-projeto {}
