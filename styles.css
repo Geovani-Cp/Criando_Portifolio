@@ -147,6 +147,8 @@ h1 {
     backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
     overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .projetos-titulo {
@@ -166,6 +168,31 @@ h1 {
     object-fit: cover;
 }
 
-.info-projetos {}
+.info-projetos {
 
-.paragrafo-projeto {}
+    margin-bottom: 5px;
+}
+
+.caixa-texto-projetos{
+    padding: 1.5rem;
+}
+.paragrafo-projeto {
+   color: rgba(226, 232, 240, 08)
+   line-height: 1.25rem; 
+}
+
+.contatos{
+    padding: 6rem 2rem;
+}
+.contatos-titulo{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+
+}
+.formulario-contato{}
+.nome-form{}
+.grupo-form{}
+.campo-form{
+}
+.text-form{}
