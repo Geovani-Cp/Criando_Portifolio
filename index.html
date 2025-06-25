@@ -10,7 +10,7 @@
 
 <body>
 
- <div class="particulas"></div>
+    <div class="particulas"></div>
 
 
 
@@ -21,13 +21,13 @@
                 <a href="#Inicio" class="menu-link">Inicio</a>
             </li>
             <li>
-                <a href="#Sobre" class="menu-link">sobre</a>
+                <a href="#Sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#Projetos" class="menu-link">projetos</a>
+                <a href="#Projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#Contatos" class="menu-link">contatos</a>
+                <a href="#Contatos" class="menu-link">Contatos</a>
             </li>
         </ul>
     </nav>
@@ -89,7 +89,7 @@
 
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
-        <form class="formulario-contato" id="formulario">
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
                 <input placeholder="Nome" class="campo-form" id="Nome">
             </div>
@@ -102,12 +102,21 @@
     </section>
 
     <script>
-       const Nome = document.getElementById('Nome');
-       const mensagem = document.getElementById('mensagem');
-       const telefone = '5566996092330';
+        function enviarWhats(event) {
+            event.preventDefault()
 
-       const texto = `Olá! Me chamo ${Nome}, ${mensagem}`
-       const msgFormatada = 
+
+            const Nome = document.getElementById('Nome');
+            const mensagem = document.getElementById('mensagem');
+            const telefone = '5566996092330';
+
+            const texto = `Olá! Me chamo ${Nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wame.me/${telefone}?text=${msgFormatada}`
+
+            window.open(url, '_blank')
+        }
 
     </script>
 
